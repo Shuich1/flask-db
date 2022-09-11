@@ -7,8 +7,7 @@ users_list = []
 
 @app.route('/')
 def index():
-    conn = psycopg2.connect(database="xacgkxus", user="xacgkxus", password="9AzfJBSkoEPCNVUPoBpkt5uU1AnuY8lD",
-                            host="balarama.db.elephantsql.com", port="5432")
+    conn = psycopg2.connect(database="P_DATABASE", user="P_USER", password="P_PASSWORD", host="P_HOST", port="P_PORT")
     cursor = conn.cursor()
 
     cursor.execute(
